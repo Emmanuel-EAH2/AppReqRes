@@ -1,0 +1,21 @@
+<table *ngFor="let listD of data" class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">avatar</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <th scope="row">{{listD.id}}</th>
+          <td>{{listD.first_name}}</td>
+          <td>{{listD.last_name}}</td>
+          <td>{{listD.email}}</td>
+          <td><img src="{{listD.avatar}}" class="card-img-top" alt="..."></td>
+        </tr>
+</tbody>
+</table>
+
